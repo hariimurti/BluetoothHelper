@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bluetooth Helper</string>
+    <string name="device_name">Device</string>
+    <string name="device_address">Address</string>
+    <string name="semicolon">:</string>
+    <string name="triple_dots">…</string>
+    <string name="some_words">This application will automatically handle the requested bluetooth pairing code and accept it. So be careful!</string>
+    <string name="override_pair_request">Override Pairing Request</string>
+    <string name="last_paired">Last Paired</string>
+</resources>
