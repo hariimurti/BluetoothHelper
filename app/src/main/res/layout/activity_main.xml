@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.percentlayout.widget.PercentRelativeLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,40 +11,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
         app:cardCornerRadius="20dp"
-        app:cardElevation="5dp"
-        app:layout_widthPercent="50%">
+        app:cardElevation="5dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_margin="50dp"
+            android:layout_margin="20dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:weightSum="1"
                 android:orientation="horizontal">
 
                 <TextView
-                    style="@android:style/TextAppearance.Large"
-                    android:layout_width="@dimen/label_width"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/weight_label"
                     android:text="@string/device_name" />
 
                 <TextView
-                    style="@android:style/TextAppearance.Large"
-                    android:layout_width="20dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/weight_semicolon"
                     android:text="@string/semicolon" />
 
                 <TextView
                     android:id="@+id/txtName"
-                    style="@android:style/TextAppearance.Large"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/weight_value"
                     android:text="@string/triple_dots" />
             </LinearLayout>
 
@@ -55,35 +53,36 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:weightSum="1"
                 android:orientation="horizontal">
 
                 <TextView
-                    style="@android:style/TextAppearance.Large"
-                    android:layout_width="@dimen/label_width"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/weight_label"
                     android:text="@string/device_address" />
 
                 <TextView
-                    style="@android:style/TextAppearance.Large"
-                    android:layout_width="20dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/weight_semicolon"
                     android:text="@string/semicolon" />
 
                 <TextView
                     android:id="@+id/txtAddress"
-                    style="@android:style/TextAppearance.Large"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/weight_value"
                     android:text="@string/triple_dots" />
             </LinearLayout>
 
             <View style="@style/Divider"/>
 
             <TextView
-                style="@android:style/TextAppearance.Large"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/some_words" />
+                android:text="@string/some_words"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
@@ -92,25 +91,26 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:weightSum="1"
                 android:orientation="horizontal">
 
                 <TextView
-                    style="@android:style/TextAppearance.Large"
-                    android:layout_width="@dimen/label_width"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/weight_label"
                     android:text="@string/last_paired" />
 
                 <TextView
-                    style="@android:style/TextAppearance.Large"
-                    android:layout_width="20dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/weight_semicolon"
                     android:text="@string/semicolon" />
 
                 <TextView
                     android:id="@+id/txtLastDevice"
-                    style="@android:style/TextAppearance.Large"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/weight_value"
                     android:text="@string/triple_dots" />
             </LinearLayout>
 
@@ -119,7 +119,6 @@
 
             <Switch
                 android:id="@+id/switchOverride"
-                style="@android:style/TextAppearance.Large"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:switchPadding="10dp"
@@ -129,4 +128,4 @@
 
     </androidx.cardview.widget.CardView>
 
-</androidx.percentlayout.widget.PercentRelativeLayout>
+</RelativeLayout>

@@ -2,4 +2,7 @@
 <resources>
     <dimen name="space">10dp</dimen>
     <dimen name="label_width">150dp</dimen>
+    <dimen name="weight_label">.3</dimen>
+    <dimen name="weight_semicolon">.1</dimen>
+    <dimen name="weight_value">.5</dimen>
 </resources>
